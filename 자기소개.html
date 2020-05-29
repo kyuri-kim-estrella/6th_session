@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>자기소개</title>
+  <meta charset="utf-8">
+  <!--  jqeury CDN을 넣어줘서 에러를 방지합니당 -->
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <!-- 합쳐지고 최소화된 최신 CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <!-- 부가적인 테마 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <!-- 직접 선언한 css 파일은 마지막에 넣어줘서 막히지 않고 적용되도록 해줍니당 -->
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="dayandnight.js"></script>
+</head>
+
+<body>
+  <h1><a href="김규리.html">김규리</a></h1>
+  <input id="night_day" type="button" value="night" onclick="
+     nightDayHandler(this);
+  ">
+  <div id="grid">
+    <ul class="nav nav-pills nav-stacked">
+      <li role="presentation"><a href="자기소개.html">자기소개</a></li>
+      <li role="presentation"><a href="인사말.html">인사말</a></li>
+      <li role="presentation"><a href="기타.html">기타</a></li>
+    </ul>
+    <div id="article">
+      <h2>자기소개</h2>
+      <p>안녕하세요 저는 <strong><u><a href="https://likelion.net/" target="_blank" title="멋쟁이사자 specification">멋쟁이
+              사자</a></u></strong>가 되고 싶은 아기사자 김규리 입니다.
+      <p style="margin-top:45px;">글로벌경영학과 19학번이고, 과 학생회에서 보도부로 활동했습니다.</p>
+      <p>춤을 매우 좋아하고, 성균관대 중앙 힙합 동아리 '꾼'에서 활동한 바 있습니다.</p>
+    </div>
+  </div>
+  <img src="꾼.png">
+</body>
+
+</html>

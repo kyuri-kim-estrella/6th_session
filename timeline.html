@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>My Timeline</title>
+     <style>
+     #title{
+        text-align: center;
+        font-family: 'Stylish', sans-serif;
+        font-size: 50px;
+    }
+    body{
+        background-color:#ACCCC4;
+    }
+    .content{
+        padding:0 10%;
+        margin-top: 10%;
+    }
+    img{
+        position:relative;
+        width:120px;
+        bottom:25px;
+        right:40px;
+        grid-column: 1;
+        border-radius: 100%;
+        border:3px solid black;
+    }
+    .card{
+        position:relative;
+        display:grid;
+        grid-template-columns: 60px auto 30px;
+        background-color:#C6DFD6;
+        width:40%;
+        margin-bottom: 5%
+        box-shadow: 0px 0px 6px 2px #64a29e inset;
+        transition: 0.2s; 
+        border-radius: 5%;
+    }
+    
+    .card:hover{
+        background-color:#E2DFD8;
+        box-shadow: none;
+        color: #878F7D; 
+    }
+    .date{
+        position:relative;
+        grid-column: 2;
+        top: -20px;
+        left:26px;
+        height: 35px;
+        padding-left: 20px;
+        background-color: azure;
+        z-index: 5;
+        box-shadow: #1bb196 5px 5px;
+        font-family: 'Stylish', sans-serif;
+    }
+    .what{
+        position:relative;
+        grid-column: 2;
+        font-family: 'Stylish', sans-serif;
+        font-size: 20px;
+        bottom: 30px;
+        left:15px;
+    }
+    .where{
+        position:relative;
+        grid-column: 2;
+        font-family: 'Stylish', sans-serif;
+        font-size: 20px;
+        bottom:15px;
+        left:15px;
+    }
+    .text{
+        position:relative;
+        grid-column: 2;
+        font-family: 'Stylish', sans-serif;
+        font-size: 20px;
+        left:15px;
+    }
+    .dot{
+        width:20px;
+        height:20px;
+        background-color: #C6DFD6;
+        position:absolute; 
+        right: -28.7%;
+        top: 40%;
+        border-radius: 100%;
+    }
+    #line{
+        position:absolute;
+        left:50%;
+        top:300px;
+        margin-left:-2.5px;
+        width:5px;
+        height:190%;
+        background-color:#C6DFD6;
+    }
+    .card:nth-child(even){
+        margin-left: 60%;
+    }
+    
+    .card:nth-child(even) .dot{
+        left:-28.2%
+    }
+    
+    .buttons{
+        text-align: center;
+    }
+    
+    #tothetop{
+        position:fixed;
+        left:0px;
+        bottom:100px;
+    }
+    
+    @media(max-width:800px){
+        .card{
+            width:80%
+            margin-left: 10%;
+        }
+        .card:nth-child(even){
+            margin-left: 10%;
+        }
+        .dot, .line{
+            display:none;
+        }
+    
+    }
+</style>
+</head>
+<body>
+    <div id="title">
+        <h1>어노잉 오렌지의 생애</h1>
+    </div>
+    <div class="buttons">
+        <button class="changebg" onclick="
+        document.querySelector('body').style.backgroundImage='url(dog.jpg)';
+        document.querySelector('body').style.backgroundSize='cover(dog.jpg)';
+        ">강아지</button>
+        <button class="changebg" onclick="
+        document.querySelector('body').style.backgroundImage='url(cat.jpg)';
+        document.querySelector('body').style.backgroundSize='cover(cat.jpg)';
+        ">고양이</button>
+    </div>
+    <div class="content">
+        <div class="card">
+            <img src="오렌지.jpeg">
+            <div class="date">1999.12.15.</div>
+            <div class="what">탄생</div>
+            <div class="where">서울특별시</div>
+            <div class="text">4kg 우량아 .. 엄마 수고했어 ..</div>
+            <div class="dot"></div>
+        </div>
+        <div class="card">
+            <img src="오렌지.jpeg">
+            <div class="date">2006~2011</div>
+            <div class="what">초등학생</div>
+            <div class="where">서울특별시</div>
+            <div class="text">천방지축 얼렁뚱땅 추억이 몽글몽글</div>
+            <div class="dot"></div>
+        </div>
+        <div class="card">
+            <img src="오렌지.jpeg">
+            <div class="date">2012~2014</div>
+            <div class="what">중학생</div>
+            <div class="where">서울특별시</div>
+            <div class="text">중2병 .. 눈감아</div>
+            <div class="dot"></div>
+        </div>
+        <div class="card">
+            <img src="오렌지.jpeg">
+            <div class="date">2015~1017</div>
+            <div class="what">고등학생</div>
+            <div class="where">서울특별시</div>
+            <div class="text">망나닝 그자체^~^</div>
+            <div class="dot"></div>
+        </div>
+        <div class="card">
+            <img src="오렌지.jpeg">
+            <div class="date">2019~</div>
+            <div class="what">대학생</div>
+            <div class="where">서울특별시 종로구 명륜동</div>
+            <div class="text">나름 인간이 되어가고 있다</div>
+            <div class="dot"></div>
+        </div>
+    </div>
+    <div id="line"></div>
+    <button id='button__top' onclick="location.href='#title'">
+        △ top
+    </button>
+
+</body>
+<style>

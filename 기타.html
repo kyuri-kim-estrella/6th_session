@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>인사</title>
+  <meta charset="utf-8">
+  <!--  jqeury CDN을 넣어줘서 에러를 방지합니당 -->
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <!-- 합쳐지고 최소화된 최신 CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <!-- 부가적인 테마 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <!-- 직접 선언한 css 파일은 마지막에 넣어줘서 막히지 않고 적용되도록 해줍니당 -->
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="dayandnight.js"></script>
+  <script>
+    var pass="tester";
+    var getpass=prompt("비밀번호를 입력하세요.");
+
+    if(pass == getpass){
+      alert("접근가능");
+    } else{
+      alert("비밀번호가 틀렸습니다.");
+    }
+  </script>
+</head>
+
+<body>
+  <h1><a href="김규리.html">김규리</a></h1>
+  <input id="night_day" type="button" value="night" onclick="
+     nightDayHandler(this);
+  ">
+  <div id="grid">
+    <ul class="nav nav-pills nav-stacked">
+      <li role="presentation"><a href="자기소개.html">자기소개</a></li>
+      <li role="presentation"><a href="인사말.html">인사말</a></li>
+      <li role="presentation"><a href="기타.html">기타</a></li>
+    </ul>
+    
+    <div id="article">
+      <h2>기타</h2>
+      <p>기타 사항으로, 저는 기타도 조금 치는 편입니다.</p>
+      <p>사실은 우쿠렐레가 더 좋아요 ( ͡° ͜ʖ ͡°)</p>
+    </div>
+  </div>
+</body>
+
+</html>

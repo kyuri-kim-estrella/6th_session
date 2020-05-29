@@ -1,0 +1,29 @@
+body{
+    background-image: url(background.jpg);
+}
+.content{
+    width: 50%;
+    height: 30%;
+    position: absolute;
+    left: 25%;
+    top: 35%;
+    text-align: center;
+}
+.window{
+    height: 80%;
+    border:  5px solid #DB8E8D;
+    border-radius: 5%;
+}
+input[type=number]{
+    width:50px;
+}
+h1{
+    font-size: 80px;
+    margin : 0px 0px 0px 0px;
+    text-shadow: 2px 2px #81665C;
+    color: beige;
+}
+h3{
+    margin : 10px 0px 0px 0px;
+    color :#F1D8E4
+}
